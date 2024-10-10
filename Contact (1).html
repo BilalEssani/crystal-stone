@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="footer/footer.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background: url("crystal-glass-gemstone-colorful.jpg") no-repeat center center/cover;
+        }
+        iframe{
+            margin-bottom: 50px;
+        }
+        .container{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container form{
+            width: 670px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            flex-wrap: wrap;
+        }
+        .container form h1{
+            color: white;
+            font-weight: 500;
+            margin-top: 20px;
+            width: 500px;
+            text-align: center;
+        }
+        .container form input{
+            width: 290px;
+            height: 40px;
+            padding-left: 10px;
+            outline: none;
+            border: none;
+            font-size: 18px;
+            margin-bottom: 10px;
+            background: none;
+            border-bottom: 2px solid white;
+            color: white;
+        }
+        .container form ::placeholder{
+            font-weight: 500;
+        }
+        .container form #lastName,
+        .container form #mobile{
+            margin-left: 20px;
+        }
+        .container form h4{
+            color: white;
+            font-weight: 300;
+            width: 600px;
+            margin-top: 20px;
+            min-width: 600px;
+            max-width: 600px;
+            min-height: 20px;
+            max-height: 20px;
+        }
+
+        .container form textarea{
+            background: none;
+            border: none;
+            border-bottom: 2px solid white;
+            color: white;
+            font-weight: 200;
+            font-size: 17px;
+            padding: 10px;
+            outline: none;
+            min-width: 600px;
+            max-width: 600px;
+            min-height: 80px;
+            max-height: 80px;
+        }
+        textarea::-webkit-scrollbar{
+            width: 1em;
+        }
+        textarea::-webkit-scrollbar-thumb{
+            background-color: rgba(194, 194, 194, 0.713);
+        }
+        .container form #button{
+            border: none;
+            background: white;
+            border-radius: 5px;
+            margin-top: 5px;
+            font-weight: 600;
+            font-size: 20px;
+            color: #333;
+            width: 100px;
+            padding: 0;
+            margin-right: 500px;
+            margin-bottom: 30px;
+            transition: 0.3s;
+        }
+        .container form #button:hover{
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+  <a href=""><marquee direction="Rights" class="bg-dark text-light"> 20% Discount On New Arrival</marquee></a>
+  <nav class="navbar navbar-expand" style="background: linear-gradient(to right, #00093c, #2d0b00);">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">
+          <img src="images/Gold_Exclusive_Royal_Luxury_Hotel_Logo-removebg-preview (1).png" width="100px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="./Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="Product.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="AboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./comparison page.html">Comparison</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>  
+    </nav>
+    <div class="container">
+        <form>
+            <h1>Contact Us</h1>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="mobile" placeholder="Mobile"required>
+            <textarea placeholder="Enter Your Message" required></textarea>
+            <input type="submit" value="Send" id="button">      
+        </form>
+    </div>
+    
+    <div class="row justify-content-center mx-0 px-0">
+      <h1 style="text-align: center; margin-bottom: 20px; color: white;">Location</h1>
+      <div class="col-md-11">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.7616001085207!2d67.0566214744301!3d24.871990644797854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33eeca8432bf5%3A0x81dece3730c9b1c5!2sAptech%20Computer%20Education%20Tariq%20Road!5e0!3m2!1sen!2s!4v1708367550199!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+         <!-- footer start -->
+         <footer class="fixed-bottom position-relative">
+          <div class="row footer-row mx-0 px-0">
+              <div class="col footer-col">
+                  <img src="images/Gold_Exclusive_Royal_Luxury_Hotel_Logo-removebg-preview (1).png" height="100px" width="50%" alt="logo">
+                  <p>RC Crystals is the place to buy Crystal & Gemstone. Established in 2024 in Karachi, Pakistan,
+                      we've always believed in fairness in our prices, integrity in the sourcing of our products, and
+                      honesty in the Spiritual guidance that we provide. We have one of the largest selections of
+                      products online and are able to source gemstone products on request.</p>
+              </div>
+              <div class="col footer-col">
+                  <h3>Office <div class="underline"><span></span></div>
+                  </h3>
+                  <p>Jail Road</p>
+                  <p>Main Ghousia, Karachi</p>
+                  <p>PIB Colony, PIN 4700, Pakistan</p>
+                  <div class="alz">
+                  <p class="email-id">ansarialtan1@gmail.com</p>
+                  </div>
+                  <h4>+92 - 3361276137</h4>
+              </div>
+              <div class="col footer-col">
+                  <h3>Links <div class="underline"><span></span></div>
+                  </h3>
+                  <ul class="list-unstyled">
+                      <li><a href="">Home</a></li>
+                      <li><a href="">AboutUs</a></li>
+                      <li><a href="">ContactUs</a></li>
+                      <li><a href="">Products</a></li>
+  
+                  </ul>
+              </div>
+              <div class="col footer-col">
+                  <h3>Newsletter <div class="underline"><span></span></div>
+                  </h3>
+                  <form>
+                      <i class="fa-solid fa-envelope" style="margin-right: 5px;"></i>
+                      <input type="email" placeholder="Enter your email id" required>
+                      <button type="submit" class="btn-form"><i class="fa-solid fa-arrow-right"></i></button>
+                  </form>
+                  <div class="social-icons abc mt-3">
+                      <i class="fa-brands fa-x-twitter"></i>
+                      <i class="fa-brands fa-facebook"></i>
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-whatsapp"></i>
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <p class="copyright">RC Crystals © 2024 - All Rights Reserved</p>
+      </footer>
+  
+  
+  
+        <!-- footer end -->
+</body>
+</html>
